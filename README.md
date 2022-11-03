@@ -14,5 +14,10 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 
 4) **Post-Quantum Cryptography in Android**: [https://medium.com/@androidcrypto/post-quantum-cryptography-in-android-8c87b6024bf5](https://medium.com/@androidcrypto/post-quantum-cryptography-in-android-8c87b6024bf5)
 
-last updated: November 02nd 2022 22:55
+5) **Enhance your own Android Bluetooth Low Energy Server part 2**: https://medium.com/@androidcrypto/enhance-your-own-android-bluetooth-low-energy-server-part-2-980cac9f910f
+
+6) **Enhance a Android Bluetooth Low Energy client part 2**: https://medium.com/@androidcrypto/enhance-a-android-bluetooth-low-energy-client-part-2-200aab7255de
+
+
+last updated: November 03rd 2022 23:55
 
