@@ -20,7 +20,7 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 
 7) **Add a Battery Service to your Bluetooth Low Energy server part 3**: https://medium.com/@androidcrypto/add-a-battery-service-to-your-bluetooth-low-energy-server-part-3-ab42cc96e43b
 
-8) ***Add a Battery Service listener to a Android Bluetooth Low Energy client part 3**: https://medium.com/@androidcrypto/add-a-battery-service-listener-to-a-android-bluetooth-low-energy-client-part-3-c70e16ed130a
+8) **Add a Battery Service listener to a Android Bluetooth Low Energy client part 3**: https://medium.com/@androidcrypto/add-a-battery-service-listener-to-a-android-bluetooth-low-energy-client-part-3-c70e16ed130a
 
 
 
