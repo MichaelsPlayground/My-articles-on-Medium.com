@@ -22,7 +22,9 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 
 8) **Add a Battery Service listener to a Android Bluetooth Low Energy client part 3**: https://medium.com/@androidcrypto/add-a-battery-service-listener-to-a-android-bluetooth-low-energy-client-part-3-c70e16ed130a
 
+9) **Expose connected devices from your own Android Bluetooth Low Energy server part**: https://medium.com/@androidcrypto/expose-connected-devices-from-your-own-android-bluetooth-low-energy-server-part-4-e11be41e681c 
 
+10) **Add a Device lister to a Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
 
-last updated: November 05th 2022 15:55
+last updated: November 27th 2022 01:00
 
