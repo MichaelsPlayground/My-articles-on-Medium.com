@@ -7,24 +7,28 @@ Note: if you want to stay on this site please open the link in a new tab or wind
 If you found my article helpful please leave a like on the Medium site, thanks.
 
 1) **Connect the Android „nRF Connect mobile“ app with a Bluetooth Low Energy device**: [https://medium.com/@androidcrypto/connect-the-android-nrf-connect-mobile-app-with-a-bluetooth-low-energy-device-8ba900d70286](https://medium.com/@androidcrypto/connect-the-android-nrf-connect-mobile-app-with-a-bluetooth-low-energy-device-8ba900d70286)
-
 2) **Setup your own Android Bluetooth Low Energy Server part 1**: [https://medium.com/@androidcrypto/setup-your-own-android-bluetooth-low-energy-server-part-1-dbf8dadd75b5] (https://medium.com/@androidcrypto/setup-your-own-android-bluetooth-low-energy-server-part-1-dbf8dadd75b5)
-
 3) **Setup a Android Bluetooth Low Energy client part 1**: [https://medium.com/@androidcrypto/setup-a-android-bluetooth-low-energy-client-part-1-70f0eea9149b](https://medium.com/@androidcrypto/setup-a-android-bluetooth-low-energy-client-part-1-70f0eea9149b)
-
 4) **Post-Quantum Cryptography in Android**: [https://medium.com/@androidcrypto/post-quantum-cryptography-in-android-8c87b6024bf5](https://medium.com/@androidcrypto/post-quantum-cryptography-in-android-8c87b6024bf5)
-
 5) **Enhance your own Android Bluetooth Low Energy Server part 2**: https://medium.com/@androidcrypto/enhance-your-own-android-bluetooth-low-energy-server-part-2-980cac9f910f
-
 6) **Enhance a Android Bluetooth Low Energy client part 2**: https://medium.com/@androidcrypto/enhance-a-android-bluetooth-low-energy-client-part-2-200aab7255de
-
 7) **Add a Battery Service to your Bluetooth Low Energy server part 3**: https://medium.com/@androidcrypto/add-a-battery-service-to-your-bluetooth-low-energy-server-part-3-ab42cc96e43b
-
 8) **Add a Battery Service listener to a Android Bluetooth Low Energy client part 3**: https://medium.com/@androidcrypto/add-a-battery-service-listener-to-a-android-bluetooth-low-energy-client-part-3-c70e16ed130a
-
 9) **Expose connected devices from your own Android Bluetooth Low Energy server part**: https://medium.com/@androidcrypto/expose-connected-devices-from-your-own-android-bluetooth-low-energy-server-part-4-e11be41e681c 
-
 10) **Add a Device lister to a Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
+11) **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
+12) **Talk to your Credit Card basic part 0**: 
+13) **Talk to your Credit Card basic part 1**:
+14) **Talk to your Credit Card basic part 2**:
+15) **Talk to your Credit Card basic part 3**:
+16) **Talk to your Credit Card basic part 4**:
+17) **Talk to your Credit Card basic part 5**:
+18) **Talk to your Credit Card basic part 6**:
+19) **Talk to your Credit Card basic part 7**:
 
-last updated: November 27th 2022 01:00
+
+
+
+
+last updated: April 211th 2023 16:00
 
