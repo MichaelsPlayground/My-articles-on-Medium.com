@@ -17,18 +17,19 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 9) **Expose connected devices from your own Android Bluetooth Low Energy server part**: https://medium.com/@androidcrypto/expose-connected-devices-from-your-own-android-bluetooth-low-energy-server-part-4-e11be41e681c 
 10) **Add a Device lister to a Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
 11) **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
-12) **Talk to your Credit Card basic part 0**: 
-13) **Talk to your Credit Card basic part 1**:
-14) **Talk to your Credit Card basic part 2**:
-15) **Talk to your Credit Card basic part 3**:
-16) **Talk to your Credit Card basic part 4**:
-17) **Talk to your Credit Card basic part 5**:
-18) **Talk to your Credit Card basic part 6**:
-19) **Talk to your Credit Card basic part 7**:
+12) **Talk to your Credit Card basic part 0**: https://medium.com/@androidcrypto/talk-to-your-credit-card-android-nfc-java-d782ff19fc4a
+13) **Talk to your Credit Card basic part 1**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-1-select-ppse-paypass-payment-system-environment-674bbc9745eb
+14) **Talk to your Credit Card basic part 2**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-2-identify-applications-on-the-card-e6a57b310815
+15) **Talk to your Credit Card basic part 3**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-3-select-one-application-on-the-card-selectaid-897a50d3f104
+16) **Talk to your Credit Card basic part 4**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-4-get-the-processing-options-98003ecd98ee
+17) **Talk to your Credit Card basic part 5**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-5-retrieve-the-application-file-locator-afl-list-8cecb0a2e166
+18) **Talk to your Credit Card basic part 6**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-6-read-all-files-given-in-the-afl-list-17e2e5d71c6e
+19) **Talk to your Credit Card basic part 7**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-7-find-and-print-out-the-application-primary-account-number-52b24b396082
 
 
 
+The sample app is working with the library BLESSED-ANDROID
 
 
-last updated: April 211th 2023 16:00
+last updated: April 12th 2023 16:00
 
