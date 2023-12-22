@@ -13,9 +13,9 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 5) **Enhance your own Android Bluetooth Low Energy Server part 2**: https://medium.com/@androidcrypto/enhance-your-own-android-bluetooth-low-energy-server-part-2-980cac9f910f
 6) **Enhance a Android Bluetooth Low Energy client part 2**: https://medium.com/@androidcrypto/enhance-a-android-bluetooth-low-energy-client-part-2-200aab7255de
 7) **Add a Battery Service to your Bluetooth Low Energy server part 3**: https://medium.com/@androidcrypto/add-a-battery-service-to-your-bluetooth-low-energy-server-part-3-ab42cc96e43b
-8) **Add a Battery Service listener to a Android Bluetooth Low Energy client part 3**: https://medium.com/@androidcrypto/add-a-battery-service-listener-to-a-android-bluetooth-low-energy-client-part-3-c70e16ed130a
+8) **Add a Battery Service listener to an Android Bluetooth Low Energy client part 3**: https://medium.com/@androidcrypto/add-a-battery-service-listener-to-a-android-bluetooth-low-energy-client-part-3-c70e16ed130a
 9) **Expose connected devices from your own Android Bluetooth Low Energy server part**: https://medium.com/@androidcrypto/expose-connected-devices-from-your-own-android-bluetooth-low-energy-server-part-4-e11be41e681c 
-10) **Add a Device lister to a Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
+10) **Add a Device lister to an Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
 11) **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
 12) **Talk to your Credit Card basic part 0**: https://medium.com/@androidcrypto/talk-to-your-credit-card-android-nfc-java-d782ff19fc4a
 13) **Talk to your Credit Card basic part 1**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-1-select-ppse-paypass-payment-system-environment-674bbc9745eb
@@ -25,11 +25,15 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 17) **Talk to your Credit Card basic part 5**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-5-retrieve-the-application-file-locator-afl-list-8cecb0a2e166
 18) **Talk to your Credit Card basic part 6**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-6-read-all-files-given-in-the-afl-list-17e2e5d71c6e
 19) **Talk to your Credit Card basic part 7**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-7-find-and-print-out-the-application-primary-account-number-52b24b396082
-
+20) **Setup of a Firebase project tutorial (step by step) for Android (Java)**:
+21) **Setup of Firebase Authentication tutorial (step by step) for Android (Java)**:
+22) **Setup of a Firebase Realtime Database tutorial (step by step) for Android (Java)**:
+23) **Setup of a Cloud Firestore Database tutorial (step by step) for Android (Java)**: not ready to publish
+24) **Setup of Firebase Storage tutorial (step by step) for Android (Java)**:  not ready to publish
 
 
 The sample app is working with the library BLESSED-ANDROID
 
 
-last updated: April 12th 2023 16:00
+last updated: December 23rd 2023 23:00
 
