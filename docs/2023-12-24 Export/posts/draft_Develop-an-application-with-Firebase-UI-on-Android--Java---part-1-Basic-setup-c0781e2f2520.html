@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Develop an application with Firebase UI on Android (Java): part 1 Basic setup</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Develop an application with Firebase UI on Android (Java): part 1 Basic setup</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This article series is about developing an Android app using Firebase UI with these products:
+</section>
+<section data-field="body" class="e-content">
+<section name="4363" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="f007" id="f007" class="graf graf--h3 graf--leading graf--title">Develop an application with Firebase UI on Android (Java): part 1 Basic setup</h3><p name="ecb8" id="ecb8" class="graf graf--p graf-after--h3">This article series is about developing an Android app using <strong class="markup--strong markup--p-strong">Firebase UI</strong> with these products:</p><ul class="postList"><li name="0a5e" id="0a5e" class="graf graf--li graf-after--p">Authentication</li><li name="90ac" id="90ac" class="graf graf--li graf-after--li">Firebase Realtime Database</li><li name="ed9a" id="ed9a" class="graf graf--li graf-after--li">Cloud Firestore Database</li><li name="fefa" id="fefa" class="graf graf--li graf-after--li">Firebase Storage.</li></ul><p name="266f" id="266f" class="graf graf--p graf-after--li"><em class="markup--em markup--p-em">FirebaseUI is an open-source library for Android that allows you to quickly connect common UI elements to </em><a href="https://firebase.google.com/" data-href="https://firebase.google.com/" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank"><em class="markup--em markup--p-em">Firebase</em></a><em class="markup--em markup--p-em"> APIs.</em></p><p name="59ea" id="59ea" class="graf graf--p graf-after--p">All products will use Firebase UI, that will reduce the necessary code to a minimum. When the app is finished, you are going to run your own chat application like WhatsApp, Signal or Telegram.</p><p name="8f6b" id="8f6b" class="graf graf--p graf-after--p">To follow the tutorial it is very important that you <strong class="markup--strong markup--p-strong">setup a Firebase project</strong> with the Firebase console with matching settings. For that reason I wrote an separate article series about the setup of the 4 supported products, see the links at the end of the article.</p><p name="053d" id="053d" class="graf graf--p graf-after--p">What are we going to handle in this tutorial ? We describe these 4 topics:</p><ol class="postList"><li name="5f47" id="5f47" class="graf graf--li graf-after--p">sign-in and sign-up of a user</li><li name="2db1" id="2db1" class="graf graf--li graf-after--li">sign-out of a user</li><li name="d075" id="d075" class="graf graf--li graf-after--li">verification of the Email address</li><li name="19a7" id="19a7" class="graf graf--li graf-after--li">deletion of the complete account</li></ol><p name="3c03" id="3c03" class="graf graf--p graf-after--li">Let’s start with a <strong class="markup--strong markup--p-strong">sign-in</strong> process for “Email and password” or “Google account”. We just need to define an array with supported Authentication providers:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="68c8" id="68c8" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">List&lt;AuthUI.IdpConfig&gt; authenticationProviders = Arrays.asList(<br />            <span class="hljs-keyword">new</span> <span class="hljs-title class_">AuthUI</span>.IdpConfig.EmailBuilder().build(),<br />            <span class="hljs-keyword">new</span> <span class="hljs-title class_">AuthUI</span>.IdpConfig.GoogleBuilder().build());</span></pre><p name="aa97" id="aa97" class="graf graf--p graf-after--pre">Inside a sign-in button onClickListener we use this intent that calls a signInLauncher. </p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="031d" id="031d" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-type">Intent</span> <span class="hljs-variable">signInIntent</span> <span class="hljs-operator">=</span> AuthUI.getInstance()<br />                        .createSignInIntentBuilder()<br />                        <span class="hljs-comment">// ... options ...</span><br />                        .setIsSmartLockEnabled(<span class="hljs-literal">true</span>)<br />                        .setAvailableProviders(authenticationProviders)<br />                        .setTheme(R.style.Theme_FirebaseUiTutorial)<br />                        .build();<br />signInLauncher.launch(signInIntent);</span></pre><p name="3d99" id="3d99" class="graf graf--p graf-after--pre">We just need to define the ActivityResultLauncher for the intent and we are fine:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="06aa" id="06aa" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">ActivityResultLauncher&lt;Intent&gt; signInLauncher = registerForActivityResult(<br />            <span class="hljs-keyword">new</span> <span class="hljs-title class_">FirebaseAuthUIActivityResultContract</span>(),<br />            (result) -&gt; {<br />                <span class="hljs-comment">// Handle the FirebaseAuthUIAuthenticationResult</span><br />                <span class="hljs-comment">//FirebaseUser user = firebaseAuth.getCurrentUser();</span><br />                <span class="hljs-type">FirebaseUser</span> <span class="hljs-variable">user</span> <span class="hljs-operator">=</span> FirebaseUtils.getCurrentUser();<br />                <span class="hljs-keyword">if</span> (user != <span class="hljs-literal">null</span>) {<br />                    Toast.makeText(MainActivity.<span class="hljs-built_in">this</span>, <span class="hljs-string">&quot;User Signed In&quot;</span>, Toast.LENGTH_SHORT).show();<br />                    signedInUser.setText(user.getEmail() + <span class="hljs-string">&quot;\nDisplayName: &quot;</span> + user.getDisplayName());<br />                    activeButtonsWhileUserIsSignedIn(<span class="hljs-literal">true</span>);<br />                } <span class="hljs-keyword">else</span> {<br />                    Log.e(TAG, <span class="hljs-string">&quot;Error in handling the FirebaseAuthUIAuthenticationResult&quot;</span>);<br />                }<br />            });</span></pre><p name="abe6" id="abe6" class="graf graf--p graf-after--pre">The (internal) Firebase UI script also handles tricky use cases like account recovery and, really, we do not need any more line of code. If the user didn’t remember the. password a “password reset” mail will be send to the Email account with more informations. If the user has not signed-in before the script is additionally asking for a user name.</p><p name="a792" id="a792" class="graf graf--p graf-after--p">If the user decides to sign-in with his Google account he presses the second button, links to his Google account and grants the permission to use the Google credentials for sign-in.</p><p name="289a" id="289a" class="graf graf--p graf-after--p">If the user closes the app at a later point and reopens the app the (old) user is still signed-in.</p><p name="c72d" id="c72d" class="graf graf--p graf-after--p">2. The <strong class="markup--strong markup--p-strong">sign-out</strong> process is very easy — a single line of code and we are done:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="1474" id="1474" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><br />FirebaseAuth.getInstance().signOut();</span></pre><p name="7de8" id="7de8" class="graf graf--p graf-after--pre">3. For some workflows an <strong class="markup--strong markup--p-strong">Email address verification</strong> is necessary or mandatory (like “opt-in” to a newsletter). It is up to the developer how to handle with an user that has not verified his account so far — a possible option could be to prohibit the app usage until the Email address is verified. In the tutorial we are showing how simple it is to run the complete verification workflow:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="390a" id="390a" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">FirebaseUtils.getCurrentUser().sendEmailVerification()<br />   .addOnCompleteListener(<span class="hljs-keyword">new</span> <span class="hljs-title class_">OnCompleteListener</span>&lt;Void&gt;() {<br />     <span class="hljs-meta">@Override</span><br />     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onComplete</span><span class="hljs-params">(<span class="hljs-meta">@NonNull</span> Task&lt;Void&gt; task)</span> {<br />        <span class="hljs-keyword">if</span> (task.isSuccessful()) {<br />           Toast.makeText(getApplicationContext(),<br />             <span class="hljs-string">&quot;An email was sent to your Email address for verification&quot;</span>,<br />             Toast.LENGTH_SHORT).show();<br />           Log.d(TAG, <span class="hljs-string">&quot;Email sent.&quot;</span>);<br />        }<br />     }<br />   });<br /><br /><span class="hljs-comment">// FirebaseUtils.getCurrentUser is FirebaseAuth.getInstance().getCurrentUser();</span></span></pre><p name="7562" id="7562" class="graf graf--p graf--empty graf-after--pre"><br></p><p name="c324" id="c324" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Firebase UI tutorial article series:</strong></p><p name="c31d" id="c31d" class="graf graf--p graf-after--p">Part 1: <strong class="markup--strong markup--p-strong">Basic setup</strong> (this article)</p><p name="e49a" id="e49a" class="graf graf--p graf-after--p">Part 2: use <strong class="markup--strong markup--p-strong">Authentication</strong> in our app</p><p name="bda8" id="bda8" class="graf graf--p graf-after--p">Part 3: store user profile data in the <strong class="markup--strong markup--p-strong">Realtime Database</strong></p><p name="7813" id="7813" class="graf graf--p graf-after--p">Part 4: chat with another user (Realtime Database)</p><p name="1da9" id="1da9" class="graf graf--p graf-after--p">Part 5: store user profile data in the <strong class="markup--strong markup--p-strong">Cloud Firestore Database</strong></p><p name="9974" id="9974" class="graf graf--p graf-after--p">Part 6: chat with another user (Cloud Firestore Database)</p><p name="2ce6" id="2ce6" class="graf graf--p graf-after--p">Part 7: store user’s profile image in <strong class="markup--strong markup--p-strong">Firebase Storage</strong> (in Connection with Realtime Database)</p><p name="ffb8" id="ffb8" class="graf graf--p graf-after--p">Part 8: store user’s profile image in Firebase Storage (in Connection with Cloud FirestoreDatabase)</p><p name="3f07" id="3f07" class="graf graf--p graf-after--p graf--trailing">Part 9: upload and download files in Firebase Storage and share a link</p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/c0781e2f2520">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on December 24, 2023.</p></footer></article></body></html>

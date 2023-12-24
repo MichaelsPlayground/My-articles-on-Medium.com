@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Connect the Android „nRF Connect mobile“ app with a Bluetooth Low Energy device</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Connect the Android „nRF Connect mobile“ app with a Bluetooth Low Energy device</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This is a simple manual for how to do the ﬁrst steps when you’re 
+trying to examine a Bluetooth Low Energy (BLE) device using the 
+app…
+</section>
+<section data-field="body" class="e-content">
+<section name="8b80" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="b02e" id="b02e" class="graf graf--h3 graf--leading graf--title">Connect the Android „nRF Connect mobile“ app with a Bluetooth Low Energy device</h3><p name="48b5" id="48b5" class="graf graf--p graf-after--h3">This is a simple manual for how to do the ﬁrst steps when you’re <br>trying to examine a Bluetooth Low Energy (BLE) device using the <br>app „nRF Connect for mobile“.</p><p name="c91f" id="c91f" class="graf graf--p graf-after--p">The app is provided for free and is available on Google’s PlayStore <br>using this link: <a href="https://play.google.com/store/apps/details?%20id=no.nordicsemi.android.mcp&amp;hl=de&amp;gl=US" data-href="https://play.google.com/store/apps/details? id=no.nordicsemi.android.mcp&amp;hl=de&amp;gl=US" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://play.google.com/store/apps/details?<br>id=no.nordicsemi.android.mcp&amp;hl=de&amp;gl=US</a>.</p><p name="b1d9" id="b1d9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Purpose of the app:</strong> the app is extreme useful when you are <br>developing a server or peripheral for the Bluetooth Low Energy <br>technology or having a 3rd party device and you would like to <br>know what services and data are provided by this device.</p><p name="cb03" id="cb03" class="graf graf--p graf-after--p">After downloading and starting the app the app is immediately <br>scanning for BLE devices and will show a device in the „Scanner“ <br>tab.</p><p name="7d12" id="7d12" class="graf graf--p graf-after--p">I used this app to communicate with my BLE Server app and the <br>screenshots in this article were taken during development.</p><p name="c915" id="c915" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Step 1:</strong> start the server app or bring your external device in a <br>„advertising mode“, so that it becomes discoverable for the nRF <br>app.</p><p name="d934" id="d934" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Step 2:</strong> the nRF app has found the server running on my second <br>smartphone. The name shown in the ﬁrst line („SM-A515F“) is the <br>name of my smartphone, a real device could show something like <br>„Contour7901H12345678“ for a Glucose meter device. Click on the <br>CONNECT button to proceed.</p><figure name="4629" id="4629" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*kdlVFhOiFzi1rV0dDCPlFw.png" data-width="500" data-height="383" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*kdlVFhOiFzi1rV0dDCPlFw.png"></figure><p name="d097" id="d097" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Step 3:</strong> The server is providing the general services like <strong class="markup--strong markup--p-strong">General <br>Attribute</strong>, <strong class="markup--strong markup--p-strong">Generic Access</strong>, <strong class="markup--strong markup--p-strong">Device Information</strong> and 2 data <br>services like the <strong class="markup--strong markup--p-strong">Current Time Service</strong> and a <strong class="markup--strong markup--p-strong">Heart Rate Service</strong>.<br>This service has (short) UUID „0x180D“ and the long UUID for the <br>service is „0000180D-0000–1000–8000–00805f9b34fb“.</p><p name="edfa" id="edfa" class="graf graf--p graf-after--p">Now click on the Heart Rate entry to get the information of this <br>service.</p><figure name="f14e" id="f14e" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Mp1xnk05j64JHMOgWx1g6Q.png" data-width="500" data-height="890" src="https://cdn-images-1.medium.com/max/800/1*Mp1xnk05j64JHMOgWx1g6Q.png"></figure><p name="deff" id="deff" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Step 4:</strong> We get the information for the Heart Rate Measurement <br>characteristic with the “short” UUID „0x2A37“ (and long UUID <br>„00002A37–0000–1000–8000–00805f9b34fb“).</p><p name="ab18" id="ab18" class="graf graf--p graf-after--p">The „arrow down“ symbol is a button that allow to read the data <br>from the server. The „arrow down and up“ symbol is a switch for <br>en- or disabling notiﬁcations and indications.</p><p name="c481" id="c481" class="graf graf--p graf-after--p">The „Descriptors“ below are responsible to handle notiﬁcations and <br>indications.</p><figure name="92a0" id="92a0" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*SgI1IiT97mbleebRK-SJRw.png" data-width="500" data-height="290" src="https://cdn-images-1.medium.com/max/800/1*SgI1IiT97mbleebRK-SJRw.png"></figure><p name="87e0" id="87e0" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Step 5: </strong>press the read button for the Heart Rate Measurement and <br>receive a one-time value of 64 bpm.</p><figure name="ab8b" id="ab8b" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*AWQAomICSSOqwKwORyvt7w.png" data-width="500" data-height="333" src="https://cdn-images-1.medium.com/max/800/1*AWQAomICSSOqwKwORyvt7w.png"></figure><p name="39ea" id="39ea" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Step 6:</strong> press the enable notiﬁcations/indications button and notice <br>that the value for the heart rate will change periodically (in this <br>example every second).</p><p name="04a8" id="04a8" class="graf graf--p graf-after--p">The Descriptors section will show that Indications/NOTIFICATIONS are enabled. The symbol changes and a second press on the symbol will disable the notiﬁcations/indications.</p><figure name="b3e0" id="b3e0" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*f3tyDjTrGKJjvHs5PQOvyQ.png" data-width="500" data-height="364" src="https://cdn-images-1.medium.com/max/800/1*f3tyDjTrGKJjvHs5PQOvyQ.png"></figure><p name="b0cb" id="b0cb" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Step 7:</strong> doing the same with the Device Information Service you <br>get the values for the Manufacturer Name and Model Number from <br>the device/server.</p><figure name="b8b7" id="b8b7" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*8OqYUsdE5NC1AxkIdklLhA.png" data-width="500" data-height="361" src="https://cdn-images-1.medium.com/max/800/1*8OqYUsdE5NC1AxkIdklLhA.png"></figure><p name="bbf3" id="bbf3" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Step 8:</strong> at least we choose the Current Time Service and there is a <br>new „arrow up“ symbol for uploading data to the device.</p><p name="18fa" id="18fa" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Warning: Beware of typing any data in the input ﬁeld and send them to <br>the server, unless that you know exactly what data are <br>expected.</strong> In the best case you just get an error on writing but in <br>the worst case, you disable or destroy the device without any <br>chance of a „reset“.</p><figure name="00b5" id="00b5" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*o58yjJqS8-JfcYCzDaxk1A.png" data-width="500" data-height="443" src="https://cdn-images-1.medium.com/max/800/1*o58yjJqS8-JfcYCzDaxk1A.png"></figure><p name="d39a" id="d39a" class="graf graf--p graf-after--figure graf--trailing">A last note when working with an emulated server/device running <br>on a Smartphone (e.g. the BleServerBlessedOriginal): For security <br>reasons the address the server can get connected is changing very <br>often so when using a client app like the nRF Connect-app it is <br>necessary to often (re)run a scan AND choose the newest entry <br>(mostly the most bottom down one).</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@androidcrypto" class="p-author h-card">AndroidCrypto</a> on <a href="https://medium.com/p/8ba900d70286"><time class="dt-published" datetime="2022-10-25T10:24:57.828Z">October 25, 2022</time></a>.</p><p><a href="https://medium.com/@androidcrypto/connect-the-android-nrf-connect-mobile-app-with-a-bluetooth-low-energy-device-8ba900d70286" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on December 24, 2023.</p></footer></article></body></html>

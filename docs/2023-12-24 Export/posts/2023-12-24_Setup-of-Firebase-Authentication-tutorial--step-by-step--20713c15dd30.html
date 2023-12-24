@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Setup of Firebase Authentication tutorial (step by step)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Setup of Firebase Authentication tutorial (step by step)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The Firebase environment needs a setup for each product, and in this article I’m setting up the Authentication product. It is part 2 of an…
+</section>
+<section data-field="body" class="e-content">
+<section name="c9d7" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="f1f7" id="f1f7" class="graf graf--h3 graf--leading graf--title">Setup of Firebase Authentication tutorial (step by step)</h3><p name="421c" id="421c" class="graf graf--p graf-after--h3">The Firebase environment needs a setup for each product, and in this article I’m setting up the <strong class="markup--strong markup--p-strong">Authentication</strong> product. It is part 2 of an article series about the setup of the most used Firebase products. It is based on the first tutorial “Setup of a Firebase project tutorial (step by step)” — please check that you are ready to add a product to a project. There is no code for an Android app (see the links to my other articles for this topic.</p><p name="6bea" id="6bea" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">What is Firebase ? <em class="markup--em markup--p-em">Firebase</em></strong><em class="markup--em markup--p-em"> is a set of backend cloud computing services and application development platforms provided by Google. It hosts databases, services, authentication, and integration for a variety of applications, including Android, iOS, JavaScript, Node.js, Java, Unity, PHP, and C++. </em>(source: Wikipedia).</p><p name="dfe9" id="dfe9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Authentication</strong> is “<em class="markup--em markup--p-em">an end-to-end-user identity solution in under 10 lines of code</em>”. As most of the Firebase applications have to do with storage it is meaningful to know that the acting user is allowed to do so.</p><p name="2d30" id="2d30" class="graf graf--p graf-after--p">We use the link <a href="https://firebase.google.com/" data-href="https://firebase.google.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://firebase.google.com/</a> to login to Firebase and click on “Go to console”, select the project you already have setup and then choose the <strong class="markup--strong markup--p-strong">Authentication product</strong>:</p><figure name="6e99" id="6e99" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*GPFhDIj7NZF_nnFX0NlJ3g.png" data-width="445" data-height="400" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*GPFhDIj7NZF_nnFX0NlJ3g.png"></figure><p name="a6a1" id="a6a1" class="graf graf--p graf-after--figure">A notice about the product appears:</p><figure name="5dc1" id="5dc1" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Z_22ZkkGHidFu75vnJ8F4A.png" data-width="567" data-height="350" src="https://cdn-images-1.medium.com/max/800/1*Z_22ZkkGHidFu75vnJ8F4A.png"></figure><p name="bacf" id="bacf" class="graf graf--p graf-after--figure">The next step is about selecting the sign-in methods you are going to accept:</p><figure name="2bf5" id="2bf5" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*7LSQgmwGSrYeJUAz7W1u8A.png" data-width="921" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*7LSQgmwGSrYeJUAz7W1u8A.png"></figure><p name="147b" id="147b" class="graf graf--p graf-after--figure">In my tutorial I’m using “Email/Password , “Anonymous” and “Google account”. Click in the “Native providers” section on “Email/Password”:</p><figure name="726c" id="726c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*VIo97rnxDTwvZldWsAzNiA.png" data-width="1079" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*VIo97rnxDTwvZldWsAzNiA.png"></figure><p name="4faa" id="4faa" class="graf graf--p graf-after--figure">Click on the switch to enable “Email/Password” (please don’t use “Email link” at this time as it requires more setup steps). Click on “Save”.</p><figure name="93e8" id="93e8" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Q29FScdkHIJqS6x_S4leVg.png" data-width="1916" data-height="376" src="https://cdn-images-1.medium.com/max/800/1*Q29FScdkHIJqS6x_S4leVg.png"></figure><p name="fcbf" id="fcbf" class="graf graf--p graf-after--figure">At this time “Email/Password” the only enabled provider, click on “Add new provider” for the next step and choose “Anonymous”:</p><figure name="a0d5" id="a0d5" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Z20VaWJN1HD65pjBGyGU5w.png" data-width="1405" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*Z20VaWJN1HD65pjBGyGU5w.png"></figure><p name="d53a" id="d53a" class="graf graf--p graf-after--figure">Click on the switch to enable “Anonymous” and on “Save” for the next step. In the overview click on “Google”:</p><figure name="fdef" id="fdef" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*EVmBgqxykcGtKunDw3Gx2w.png" data-width="1012" data-height="700" src="https://cdn-images-1.medium.com/max/800/1*EVmBgqxykcGtKunDw3Gx2w.png"></figure><p name="5c3b" id="5c3b" class="graf graf--p graf-after--figure">As for the other providers, click on the switch to enable Google as log-in provider. There is a note regarding the “SHA-1 release fingerprint” — we do this in a few moments. You can change the “Public-facing name” — I leave it with the default value. The point is to provide a “Support email” — just use the default value of the Firebase Google account. Now it is time to click on “Save”:</p><figure name="c8fc" id="c8fc" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*YlWtXCOZDB2yKjItMV8Whg.png" data-width="726" data-height="700" src="https://cdn-images-1.medium.com/max/800/1*YlWtXCOZDB2yKjItMV8Whg.png"></figure><p name="5a1a" id="5a1a" class="graf graf--p graf-after--figure">If you read this red written message “Can’t enable Google sign-in” you are encountering a real problem. Another project with the same Package name exists that will prevent you from using Google authentication in this project. You have to change the package name of your app to use Google Authentication.</p><figure name="7e83" id="7e83" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*nIeQQAfwiXjeufCREVMLFw.png" data-width="884" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*nIeQQAfwiXjeufCREVMLFw.png"></figure><p name="47c3" id="47c3" class="graf graf--p graf-after--figure">Now we are ready — we enabled three Sign-in providers (“Email/Password”, “Google” and “Anonymous” for Firebase Authentication.</p><p name="7cb5" id="7cb5" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Update 2023–11–27</strong>: As Google changed a setting you may encounter problems when using <strong class="markup--strong markup--p-strong">Firebase UI</strong>. Please go to “Settings” and <strong class="markup--strong markup--p-strong">disable the option “Email enumeration protection”</strong>. If not doing so you can’t sign-in but only sign-up users in Firebase UI Auth module (it was not updated so far).</p><figure name="e429" id="e429" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*TaXKAb_Q0E_D-Fdy7TSC5A.png" data-width="794" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*TaXKAb_Q0E_D-Fdy7TSC5A.png"></figure><p name="e3a4" id="e3a4" class="graf graf--p graf-after--figure">If you just needed an authentication service for your project you are ready to download the “google-services.json” file, move it to your app folder and start developing your app.</p><p name="0af2" id="0af2" class="graf graf--p graf-after--p">Article series about Firebase:</p><ol class="postList"><li name="1268" id="1268" class="graf graf--li graf-after--p"><a href="https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7" data-href="https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7" class="markup--anchor markup--li-anchor" target="_blank">Setup of a Firebase project</a></li><li name="dcd1" id="dcd1" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30" data-href="https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30" class="markup--anchor markup--li-anchor" target="_blank">Setup of Firebase Authentication</a> (this article)</li><li name="b81c" id="b81c" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-a-firebase-realtime-database-tutorial-step-by-step-be83533ebacb" data-href="https://medium.com/@androidcrypto/setup-of-a-firebase-realtime-database-tutorial-step-by-step-be83533ebacb" class="markup--anchor markup--li-anchor" target="_blank">Setup of a Firebase Realtime Database</a></li><li name="2720" id="2720" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-a-cloud-firestore-database-tutorial-step-by-step-1ccc9ec52005" data-href="https://medium.com/@androidcrypto/setup-of-a-cloud-firestore-database-tutorial-step-by-step-1ccc9ec52005" class="markup--anchor markup--li-anchor" target="_blank">Setup of a Cloud Firestore Database</a></li><li name="a5ab" id="a5ab" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-firebase-storage-tutorial-step-by-step-5266f4ec1dd2" data-href="https://medium.com/@androidcrypto/setup-of-firebase-storage-tutorial-step-by-step-5266f4ec1dd2" class="markup--anchor markup--li-anchor" target="_blank">Setup of Firebase Storage</a></li><li name="4e96" id="4e96" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/finish-the-setup-of-the-firebase-project-for-an-android-app-tutorial-step-by-step-325e13352302" data-href="https://medium.com/@androidcrypto/finish-the-setup-of-the-firebase-project-for-an-android-app-tutorial-step-by-step-325e13352302" class="markup--anchor markup--li-anchor" target="_blank">Finish the setup of the Firebase project for an Android app tutorial (step by step)</a></li><li name="dcf5" id="dcf5" class="graf graf--li graf-after--li">Finish the setup of the Firebase project for a Web app tutorial (step by step): will follow soon</li><li name="d880" id="d880" class="graf graf--li graf-after--li">Firebase tutorial for an Android app (Java): will follow soon</li><li name="a4af" id="a4af" class="graf graf--li graf-after--li graf--trailing">Firebase tutorial for a Web app (Javascript): will follow soon</li></ol></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@androidcrypto" class="p-author h-card">AndroidCrypto</a> on <a href="https://medium.com/p/20713c15dd30"><time class="dt-published" datetime="2023-12-24T10:47:11.627Z">December 24, 2023</time></a>.</p><p><a href="https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on December 24, 2023.</p></footer></article></body></html>

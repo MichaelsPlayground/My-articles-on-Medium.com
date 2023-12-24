@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Talk to your Credit Card part 3: select one application on the card (“selectAid”)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Talk to your Credit Card part 3: select one application on the card (“selectAid”)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The previous article ended with the information, that our MasterCard has one application ID (“AID”) available on the card.
+</section>
+<section data-field="body" class="e-content">
+<section name="f5aa" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c086" id="c086" class="graf graf--h3 graf--leading graf--title">Talk to your Credit Card part 3: select one application on the card (“selectAid”)</h3><p name="6026" id="6026" class="graf graf--p graf-after--h3">The previous article ended with the information, that our MasterCard has one application ID (“AID”) available on the card.</p><figure name="a554" id="a554" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*McGmVM8l7OudcfxwntrWkA.png" data-width="300" data-height="389" data-is-featured="true" alt="Screenshot of the app in step 3" src="https://cdn-images-1.medium.com/max/800/1*McGmVM8l7OudcfxwntrWkA.png"></figure><p name="b83a" id="b83a" class="graf graf--p graf-after--figure">In step 3 we are using this information to select this AID on the card and work with the card’s response.</p><p name="452c" id="452c" class="graf graf--p graf-after--p">Before we are proceeding I’m giving some informations about the AID. Most people never recognize this data element but on most card slip (the small paper strip you receive after a transaction) the AID is printed to show what application was used for the transaction. This AID is a registered number and every payment provider does know where to route the transaction. An overview about the most common AIDs is available with this <a href="https://www.eftlab.com/knowledge-base/complete-list-of-application-identifiers-aid" data-href="https://www.eftlab.com/knowledge-base/complete-list-of-application-identifiers-aid" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">link</a>.</p><p name="c579" id="c579" class="graf graf--p graf-after--p">The processing looks like very equal to the one in step 1. In the app we are iterating over the list of found applications/AID and the byte[] aidSelected contains the selected AID:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="c3ba" id="c3ba" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-type">byte</span>[] selectAidCommand = selectApdu(aidSelected);<br /><span class="hljs-type">byte</span>[] selectAidResponse = nfc.transceive(selectAidCommand);<br />writeToUiAppend(<span class="hljs-string">&quot;&quot;</span>);<br />writeToUiAppend(<span class="hljs-string">&quot;03 select AID command  length &quot;</span> + selectAidCommand.length + <span class="hljs-string">&quot; data: &quot;</span> + bytesToHexNpe(selectAidCommand));<br />writeToUiAppend(<span class="hljs-string">&quot;03 select AID response length &quot;</span> + selectAidResponse.length + <span class="hljs-string">&quot; data: &quot;</span> + bytesToHexNpe(selectAidResponse));</span></pre><p name="6138" id="6138" class="graf graf--p graf-after--pre">The printout of both data (command and response) would look like:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="808b" id="808b" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-number">03</span> select application by AID <span class="hljs-title function_">a0000000041010</span> <span class="hljs-params">(number <span class="hljs-number">1</span>)</span><br /><span class="hljs-number">03</span> select AID command  length <span class="hljs-number">13</span> data: 00a4040007a000000004101000<br /><span class="hljs-number">03</span> select AID response length <span class="hljs-number">86</span> data: 6f528407a0000000041010a54750104465626974204d6173746572436172649f12104465626974204d6173746572436172648701019f1101015f2d046465656ebf0c119f0a04000101019f6e07028000003030009000</span></pre><p name="16f8" id="16f8" class="graf graf--p graf-after--pre">Using the prettyPrint method the parsed data looks like this:</p><pre data-code-block-mode="0" spellcheck="false" name="1912" id="1912" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">------------------------------------<br>6F 52 -- File Control Information (FCI) Template<br>      84 07 -- Dedicated File (DF) Name<br>            A0 00 00 00 04 10 10 (BINARY)<br>      A5 47 -- File Control Information (FCI) Proprietary Template<br>            50 10 -- Application Label<br>                  44 65 62 69 74 20 4D 61 73 74 65 72 43 61 72 64 (=Debit MasterCard)<br>            9F 12 10 -- Application Preferred Name<br>                     44 65 62 69 74 20 4D 61 73 74 65 72 43 61 72 64 (=Debit MasterCard)<br>            87 01 -- Application Priority Indicator<br>                  01 (BINARY)<br>            9F 11 01 -- Issuer Code Table Index<br>                     01 (NUMERIC)<br>            5F 2D 04 -- Language Preference<br>                     64 65 65 6E (=deen)<br>            BF 0C 11 -- File Control Information (FCI) Issuer Discretionary Data<br>                     9F 0A 04 -- [UNKNOWN TAG]<br>                              00 01 01 01 (BINARY)<br>                     9F 6E 07 -- Visa Low-Value Payment (VLP) Issuer Authorisation Code<br>                              02 80 00 00 30 30 00 (BINARY)<br>90 00 -- Command successfully executed (OK)<br>------------------------------------</span></pre><p name="fbaa" id="fbaa" class="graf graf--p graf-after--pre">When reading a VisaCard with an AID of “A0000000031010” I got these printouts:</p><pre data-code-block-mode="0" spellcheck="false" name="bf6b" id="bf6b" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">03 select AID command  length 13 data: 00a4040007a000000003101000<br>03 select AID response length 109 data: 6f698407a0000000031010a55e500e636f6d64697265637420566973619f120e636f6d64697265637420566973619f1101018701015f2d046465656e9f380f9f66049f02069f37045f2a029f1a02bf0c1a9f0a0800010502000000009f5a053109780276bf6304df2001809000</span></pre><p name="1ae1" id="1ae1" class="graf graf--p graf-after--pre">The printout is looking different to the one for a MasterCard:</p><pre data-code-block-mode="0" spellcheck="false" name="a96a" id="a96a" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">------------------------------------<br>6F 69 -- File Control Information (FCI) Template<br>      84 07 -- Dedicated File (DF) Name<br>            A0 00 00 00 03 10 10 (BINARY)<br>      A5 5E -- File Control Information (FCI) Proprietary Template<br>            50 0E -- Application Label<br>                  63 6F 6D 64 69 72 65 63 74 20 56 69 73 61 (=comdirect Visa)<br>            9F 12 0E -- Application Preferred Name<br>                     63 6F 6D 64 69 72 65 63 74 20 56 69 73 61 (=comdirect Visa)<br>            9F 11 01 -- Issuer Code Table Index<br>                     01 (NUMERIC)<br>            87 01 -- Application Priority Indicator<br>                  01 (BINARY)<br>            5F 2D 04 -- Language Preference<br>                     64 65 65 6E (=deen)<br>            9F 38 0F -- Processing Options Data Object List (PDOL)<br>                     9F 66 04 -- Terminal Transaction Qualifiers<br>                     9F 02 06 -- Amount, Authorised (Numeric)<br>                     9F 37 04 -- Unpredictable Number<br>                     5F 2A 02 -- Transaction Currency Code<br>                     9F 1A 02 -- Terminal Country Code<br>            BF 0C 1A -- File Control Information (FCI) Issuer Discretionary Data<br>                     9F 0A 08 -- [UNKNOWN TAG]<br>                              00 01 05 02 00 00 00 00 (BINARY)<br>                     9F 5A 05 -- Terminal transaction Type (Interac)<br>                              31 09 78 02 76 (BINARY)<br>                     BF 63 04 -- [UNKNOWN TAG]<br>                              DF 20 01 -- [UNKNOWN TAG]<br>                                       80 (BINARY)<br>90 00 -- Command successfully executed (OK)<br>------------------------------------</span></pre><p name="c5f6" id="c5f6" class="graf graf--p graf-after--pre">The following code is added in MainActivity.java class:</p><pre data-code-block-mode="2" spellcheck="false" data-code-block-lang="java" name="c5c9" id="c5c9" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">onTagDiscovered</span><span class="hljs-params">(Tag tag)</span> {<br />...<br /><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">aidNumber</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; aidNumber &lt; tag4fList.size(); aidNumber++) {<br />    <span class="hljs-type">byte</span>[] aidSelected = aidList.get(aidNumber);<br />    writeToUiAppend(<span class="hljs-string">&quot;&quot;</span>);<br />    printStepHeader(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;select application by AID&quot;</span>);<br />    writeToUiAppend(<span class="hljs-string">&quot;03 select application by AID &quot;</span> + bytesToHexNpe(aidSelected) + <span class="hljs-string">&quot; (number &quot;</span> + (aidNumber + <span class="hljs-number">1</span>) + <span class="hljs-string">&quot;)&quot;</span>);<br />    <span class="hljs-type">byte</span>[] selectAidCommand = selectApdu(aidSelected);<br />    <span class="hljs-type">byte</span>[] selectAidResponse = nfc.transceive(selectAidCommand);<br />    writeToUiAppend(<span class="hljs-string">&quot;&quot;</span>);<br />    writeToUiAppend(<span class="hljs-string">&quot;03 select AID command  length &quot;</span> + selectAidCommand.length + <span class="hljs-string">&quot; data: &quot;</span> + bytesToHexNpe(selectAidCommand));<br />    writeToUiAppend(<span class="hljs-string">&quot;03 select AID response length &quot;</span> + selectAidResponse.length + <span class="hljs-string">&quot; data: &quot;</span> + bytesToHexNpe(selectAidResponse));<br />    writeToUiAppend(prettyPrintDataToString(selectAidResponse));<br />    writeToUiAppend(etData, <span class="hljs-string">&quot;03 select AID completed&quot;</span>);<br />    <span class="hljs-comment">//}</span><br /><br />} <span class="hljs-comment">// for (int aidNumber = 0; aidNumber &lt; tag4fList.size(); aidNumber++) {</span><br />...</span></pre><figure name="6b1b" id="6b1b" class="graf graf--figure graf-after--pre"><img class="graf-image" data-image-id="1*XT8rg9768I3ACwStj7mlUA.png" data-width="300" data-height="433" src="https://cdn-images-1.medium.com/max/800/1*XT8rg9768I3ACwStj7mlUA.png"><figcaption class="imageCaption">Log file of step 3</figcaption></figure><p name="833f" id="833f" class="graf graf--p graf-after--figure">This is the point where some magic will happen but thats the story for <a href="https://medium.com/@androidcrypto/talk-to-your-credit-card-part-4-get-the-processing-options-98003ecd98ee" data-href="https://medium.com/@androidcrypto/talk-to-your-credit-card-part-4-get-the-processing-options-98003ecd98ee" class="markup--anchor markup--p-anchor" target="_blank"><strong class="markup--strong markup--p-strong">step 4: analyze the card’s response to find out what data the card needs to proceed (find the “processing options data object list” (PDOL))</strong></a><strong class="markup--strong markup--p-strong">:</strong></p><p name="61c0" id="61c0" class="graf graf--p graf-after--p graf--trailing">Find the full code of the app in my GitHub repository <strong class="markup--strong markup--p-strong">TalkToYourCreditCardPart3</strong>:<a href="https://github.com/AndroidCrypto/TalkToYourCreditCardPart3" data-href="https://github.com/AndroidCrypto/TalkToYourCreditCardPart3" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"> TalkToYourCreditCardPart3</a></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@androidcrypto" class="p-author h-card">AndroidCrypto</a> on <a href="https://medium.com/p/897a50d3f104"><time class="dt-published" datetime="2023-04-12T09:36:55.077Z">April 12, 2023</time></a>.</p><p><a href="https://medium.com/@androidcrypto/talk-to-your-credit-card-part-3-select-one-application-on-the-card-selectaid-897a50d3f104" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on December 24, 2023.</p></footer></article></body></html>

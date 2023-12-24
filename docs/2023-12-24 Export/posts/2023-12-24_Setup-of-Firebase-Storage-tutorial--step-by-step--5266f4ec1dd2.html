@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Setup of Firebase Storage tutorial (step by step)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Setup of Firebase Storage tutorial (step by step)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+The Firebase environment needs a setup for each product, and in this article I’m setting up the Firebase Storage product. It is part 5 of…
+</section>
+<section data-field="body" class="e-content">
+<section name="eca2" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="ab0b" id="ab0b" class="graf graf--h3 graf--leading graf--title">Setup of Firebase Storage tutorial (step by step)</h3><p name="bcc8" id="bcc8" class="graf graf--p graf-after--h3">The Firebase environment needs a setup for each product, and in this article I’m setting up the <strong class="markup--strong markup--p-strong">Firebase Storage </strong>product. It is part 5 of an article series about the setup of the most used Firebase products. It is based on the first tutorial “Setup a Firebase project tutorial (step by step)” — please check that you are ready to add a product to a project. There is no code for an Android or Web app (see the links to my other articles for this topic). As most apps require a user authentication you should read the tutorial about the “Authentication” product as well.</p><p name="9487" id="9487" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">What is Firebase ? <em class="markup--em markup--p-em">Firebase</em></strong><em class="markup--em markup--p-em"> is a set of backend cloud computing services and application development platforms provided by Google. It hosts databases, services, authentication, and integration for a variety of applications, including Android, iOS, JavaScript, Node.js, Java, Unity, PHP, and C++. </em>(source: Wikipedia).</p><p name="d1a8" id="d1a8" class="graf graf--p graf-after--p">If you followed the article series you may wonder “after <strong class="markup--strong markup--p-strong">Firebase Realtime Database</strong> and <strong class="markup--strong markup--p-strong">Cloud Firestore Database</strong>, <strong class="markup--strong markup--p-strong">Firebase Storage</strong> is the third storage system ?”. The answer is yes and no because: yes, it a a third storage system but, no, not in the kind of the databases. They are designed to work with structured data or better datasets. This is an example of a dataset of an user: there are several data fields for one user (e.g. email address, user name, user image, last online timestamp). On the other hand the user may want to store images, audio and video files that need a place where to drop them. For that reason we do need a separate product that is called <strong class="markup--strong markup--p-strong">Firebase Storage</strong>.</p><figure name="07cc" id="07cc" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*9j8sZICBvSI79cRpflDLCg.png" data-width="493" data-height="400" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*9j8sZICBvSI79cRpflDLCg.png"></figure><p name="a3ba" id="a3ba" class="graf graf--p graf-after--figure">Click on the button to proceed:</p><figure name="7325" id="7325" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*RyqVM2UYZ0flMWzoECUy7Q.png" data-width="642" data-height="350" src="https://cdn-images-1.medium.com/max/800/1*RyqVM2UYZ0flMWzoECUy7Q.png"></figure><p name="6ece" id="6ece" class="graf graf--p graf-after--figure">Click on “Get Started” to proceed:</p><figure name="40dd" id="40dd" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*bVZu1Pg3Wyv8XKtwEJIXaQ.png" data-width="673" data-height="500" src="https://cdn-images-1.medium.com/max/800/1*bVZu1Pg3Wyv8XKtwEJIXaQ.png"></figure><p name="5e51" id="5e51" class="graf graf--p graf-after--figure">The first step is about <strong class="markup--strong markup--p-strong">Security rules </strong>and I don’t really like the two possible options:</p><ul class="postList"><li name="7cd1" id="7cd1" class="graf graf--li graf-after--p">start in start in <strong class="markup--strong markup--li-strong">production mode</strong>: means create an “unusable storage database” because no data can get appended, deleted or even read. Choose this option if you know what individual rules need to get setup in a following step.</li><li name="fab6" id="fab6" class="graf graf--li graf-after--li">start in <strong class="markup--strong markup--li-strong">test mode</strong>: means the storage database will allow an unlimited read and write access <strong class="markup--strong markup--li-strong">without any limitations</strong>. As <strong class="markup--strong markup--li-strong">this setup is insecure</strong> the database has a <strong class="markup--strong markup--li-strong">time limit of 1 month</strong>. This option is good for testing purposes but there is a high risk that you forget about the time limit and <br>are surprised when your application stops to work properly.</li></ul><p name="d2af" id="d2af" class="graf graf--p graf-after--li">Click on “Next” to proceed:</p><figure name="b819" id="b819" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*PFkKSCbXJNKF4cOLLsFAnw.png" data-width="885" data-height="500" src="https://cdn-images-1.medium.com/max/800/1*PFkKSCbXJNKF4cOLLsFAnw.png"></figure><figure name="c5f9" id="c5f9" class="graf graf--figure graf-after--figure"><img class="graf-image" data-image-id="1*SDIiCX864lq9H5tqLc3NTg.png" data-width="258" data-height="450" src="https://cdn-images-1.medium.com/max/800/1*SDIiCX864lq9H5tqLc3NTg.png"></figure><p name="0b34" id="0b34" class="graf graf--p graf-after--figure">We need to choose at what server location the database should run — chose carefully as you cannot change this setting at a later time. As I’m located in Germany I have chosen “eur3 (Europe)”. Click on “Done”:</p><figure name="ba4c" id="ba4c" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*aprKYa5pyxs5rxewyANV4A.png" data-width="1711" data-height="450" src="https://cdn-images-1.medium.com/max/800/1*aprKYa5pyxs5rxewyANV4A.png"></figure><p name="35ef" id="35ef" class="graf graf--p graf-after--figure">At this time the database is empty, but you should click on the “Rules” tab to edit the “production mode”. Change the existing (locking) rule to this values, meaning that only authenticated users are allowed to read and write to documents. This means on the other hand: every authenticated user can edit every document; a better solution could be that all user can read every document, but only the user who had created a document is allowed to edit the data. For more information about “rules” see <a href="https://firebase.google.com/docs/database/security" data-href="https://firebase.google.com/docs/database/security" class="markup--anchor markup--p-anchor" rel="nofollow noopener noopener noopener" target="_blank">https://firebase.google.com/docs/database/security</a>. If you want to “play” with rules visit the “Rules Playground”.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="rust" name="d7dc" id="d7dc" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">rules_version = <span class="hljs-string">&#x27;2&#x27;</span>;<br /><br /><span class="hljs-comment">// Craft rules based on data in your Firestore database</span><br /><span class="hljs-comment">// allow write: if firestore.get(</span><br /><span class="hljs-comment">//    /databases/(default)/documents/users/$(request.auth.uid)).data.isAdmin;</span><br />service firebase.storage {<br />  <span class="hljs-keyword">match</span> /b/{bucket}/o {<br />    <span class="hljs-keyword">match</span> /{allPaths=**} {<br />      allow read, write: <span class="hljs-keyword">if</span> request.auth != null;<br />    }<br />  }<br />}</span></pre><p name="7e3c" id="7e3c" class="graf graf--p graf-after--pre">After “Publishing” the rules our Storage is ready to store files.</p><p name="d80c" id="d80c" class="graf graf--p graf-after--p">Article series about Firebase:</p><ol class="postList"><li name="1268" id="1268" class="graf graf--li graf-after--p"><a href="https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7" data-href="https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7" class="markup--anchor markup--li-anchor" target="_blank">Setup of a Firebase project</a></li><li name="dcd1" id="dcd1" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30" data-href="https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30" class="markup--anchor markup--li-anchor" target="_blank">Setup of Firebase Authentication</a></li><li name="b81c" id="b81c" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-a-firebase-realtime-database-tutorial-step-by-step-be83533ebacb" data-href="https://medium.com/@androidcrypto/setup-of-a-firebase-realtime-database-tutorial-step-by-step-be83533ebacb" class="markup--anchor markup--li-anchor" target="_blank">Setup of a Firebase Realtime Database</a></li><li name="2720" id="2720" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-a-cloud-firestore-database-tutorial-step-by-step-1ccc9ec52005" data-href="https://medium.com/@androidcrypto/setup-of-a-cloud-firestore-database-tutorial-step-by-step-1ccc9ec52005" class="markup--anchor markup--li-anchor" target="_blank">Setup of a Cloud Firestore Database</a></li><li name="a5ab" id="a5ab" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/setup-of-firebase-storage-tutorial-step-by-step-5266f4ec1dd2" data-href="https://medium.com/@androidcrypto/setup-of-firebase-storage-tutorial-step-by-step-5266f4ec1dd2" class="markup--anchor markup--li-anchor" target="_blank">Setup of Firebase Storage</a> (this article)</li><li name="4e96" id="4e96" class="graf graf--li graf-after--li"><a href="https://medium.com/@androidcrypto/finish-the-setup-of-the-firebase-project-for-an-android-app-tutorial-step-by-step-325e13352302" data-href="https://medium.com/@androidcrypto/finish-the-setup-of-the-firebase-project-for-an-android-app-tutorial-step-by-step-325e13352302" class="markup--anchor markup--li-anchor" target="_blank">Finish the setup of the Firebase project for an Android app tutorial (step by step)</a></li><li name="dcf5" id="dcf5" class="graf graf--li graf-after--li">Finish the setup of the Firebase project for a Web app tutorial (step by step): will follow soon</li><li name="1551" id="1551" class="graf graf--li graf-after--li">Firebase tutorial for an Android app (Java): will follow soon</li><li name="a4af" id="a4af" class="graf graf--li graf-after--li graf--trailing">Firebase tutorial for a Web app (Javascript): will follow soon</li></ol></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@androidcrypto" class="p-author h-card">AndroidCrypto</a> on <a href="https://medium.com/p/5266f4ec1dd2"><time class="dt-published" datetime="2023-12-24T10:50:16.997Z">December 24, 2023</time></a>.</p><p><a href="https://medium.com/@androidcrypto/setup-of-firebase-storage-tutorial-step-by-step-5266f4ec1dd2" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on December 24, 2023.</p></footer></article></body></html>
