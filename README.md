@@ -6,6 +6,7 @@ Note: if you want to stay on this site please open the link in a new tab or wind
 
 If you found my article helpful please leave a like on the Medium site, thanks.
 
+## Android / Bluetooth Low Energy related articles
 - **Connect the Android „nRF Connect mobile“ app with a Bluetooth Low Energy device**: [https://medium.com/@androidcrypto/connect-the-android-nrf-connect-mobile-app-with-a-bluetooth-low-energy-device-8ba900d70286](https://medium.com/@androidcrypto/connect-the-android-nrf-connect-mobile-app-with-a-bluetooth-low-energy-device-8ba900d70286)
 - **Setup your own Android Bluetooth Low Energy Server part 1**: [https://medium.com/@androidcrypto/setup-your-own-android-bluetooth-low-energy-server-part-1-dbf8dadd75b5] (https://medium.com/@androidcrypto/setup-your-own-android-bluetooth-low-energy-server-part-1-dbf8dadd75b5)
 - **Setup a Android Bluetooth Low Energy client part 1**: [https://medium.com/@androidcrypto/setup-a-android-bluetooth-low-energy-client-part-1-70f0eea9149b](https://medium.com/@androidcrypto/setup-a-android-bluetooth-low-energy-client-part-1-70f0eea9149b)
@@ -17,8 +18,6 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 - **Expose connected devices from your own Android Bluetooth Low Energy server part**: https://medium.com/@androidcrypto/expose-connected-devices-from-your-own-android-bluetooth-low-energy-server-part-4-e11be41e681c 
 - **Add a Device lister to an Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
 The sample app is working with the library BLESSED-ANDROID 
- 
-11) **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
 
 ## Android / Java NFC CreditCard related articles
 - **Talk to your Credit Card basic part 0**: https://medium.com/@androidcrypto/talk-to-your-credit-card-android-nfc-java-d782ff19fc4a
@@ -32,7 +31,6 @@ The sample app is working with the library BLESSED-ANDROID
 - **Mifare DESFire EV3 — a beginner tutorial (Android Java) using the DESFire for Android tools**: https://medium.com/@androidcrypto/mifare-desfire-ev3-a-beginner-tutorial-android-java-using-the-desfire-for-android-tools-00aaecb8fa93
 - **Design an Access Control System based on Mifare DESFire EV3 NFC-tags**: https://medium.com/@androidcrypto/design-an-access-control-system-based-on-mifare-desfire-ev3-nfc-tags-aa4a7142d85d
 
- 
 ## Firebase related articles 
 - **Setup of a Firebase project tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7
 - **Setup of Firebase Authentication tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30
@@ -44,6 +42,9 @@ The sample app is working with the library BLESSED-ANDROID
 - **Firebase tutorial for an Android app (Java)**: will follow soon
 - **Firebase tutorial for a Web app (Javascript)**: will follow soon
 
+## Several articles
+
+- **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
 
 last updated: March 19th 2024 13:00
 
