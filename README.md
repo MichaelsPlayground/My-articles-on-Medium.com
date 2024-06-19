@@ -31,9 +31,8 @@ The sample app is working with the library BLESSED-ANDROID
 - **Mifare DESFire EV3 — a beginner tutorial (Android Java) using the DESFire for Android tools**: https://medium.com/@androidcrypto/mifare-desfire-ev3-a-beginner-tutorial-android-java-using-the-desfire-for-android-tools-00aaecb8fa93
 - **Design an Access Control System based on Mifare DESFire EV3 NFC-tags**: https://medium.com/@androidcrypto/design-an-access-control-system-based-on-mifare-desfire-ev3-nfc-tags-aa4a7142d85d
 - **Mifare DESFire EVx NFC tag: Change the Master Application Key from DES to AES (Android/Java)**: https://medium.com/@androidcrypto/mifare-desfire-evx-nfc-tag-change-the-master-application-key-from-des-to-aes-android-java-e5dcf02861ff
-- **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 1**:  will follow soon
-- **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 2**:  will follow soon
-
+- **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 1**: https://medium.com/@androidcrypto/demystify-the-secure-dynamic-message-with-ntag-424-dna-nfc-tags-android-java-part-1-b947c482913c
+- **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 2**: https://medium.com/@androidcrypto/demystify-the-secure-dynamic-message-with-ntag-424-dna-nfc-tags-android-java-part-2-1f8878faa928
 ## Firebase related articles 
 - **Setup of a Firebase project tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7
 - **Setup of Firebase Authentication tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30
