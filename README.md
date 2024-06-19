@@ -19,7 +19,7 @@ If you found my article helpful please leave a like on the Medium site, thanks.
 - **Add a Device lister to an Android Bluetooth Low Energy client part 4**: https://medium.com/@androidcrypto/add-a-device-lister-to-a-android-bluetooth-low-energy-client-part-4-530cd0db71dd
 The sample app is working with the library BLESSED-ANDROID 
 
-## Android / Java NFC CreditCard related articles
+## Android / Java NFC / CreditCard related articles
 - **Talk to your Credit Card basic part 0**: https://medium.com/@androidcrypto/talk-to-your-credit-card-android-nfc-java-d782ff19fc4a
 - **Talk to your Credit Card basic part 1**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-1-select-ppse-paypass-payment-system-environment-674bbc9745eb
 - **Talk to your Credit Card basic part 2**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-2-identify-applications-on-the-card-e6a57b310815
@@ -28,8 +28,11 @@ The sample app is working with the library BLESSED-ANDROID
 - **Talk to your Credit Card basic part 5**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-5-retrieve-the-application-file-locator-afl-list-8cecb0a2e166
 - **Talk to your Credit Card basic part 6**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-6-read-all-files-given-in-the-afl-list-17e2e5d71c6e
 - **Talk to your Credit Card basic part 7**: https://medium.com/@androidcrypto/talk-to-your-credit-card-part-7-find-and-print-out-the-application-primary-account-number-52b24b396082
-- **Mifare DESFire EV3 — a beginner tutorial (Android Java) using the DESFire for Android tools**: https://medium.com/@androidcrypto/mifare-desfire-ev3-a-beginner-tutorial-android-java-using-the-desfire-for-android-tools-00aaecb8fa93
+- **Mifare DESFire EV3 — a beginner tutorial (Android Java) using the DESFire for Android tools**: https://medium.com/@androidcrypto/mifare-desfire-ev3-a-beginner-tutorial-android-java-using-the-desfire-for-android-tools-00aaecb8fa93
 - **Design an Access Control System based on Mifare DESFire EV3 NFC-tags**: https://medium.com/@androidcrypto/design-an-access-control-system-based-on-mifare-desfire-ev3-nfc-tags-aa4a7142d85d
+- **Mifare DESFire EVx NFC tag: Change the Master Application Key from DES to AES (Android/Java)**: https://medium.com/@androidcrypto/mifare-desfire-evx-nfc-tag-change-the-master-application-key-from-des-to-aes-android-java-e5dcf02861ff
+- **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 1**:  will follow soon
+- **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 2**:  will follow soon
 
 ## Firebase related articles 
 - **Setup of a Firebase project tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7
@@ -46,5 +49,5 @@ The sample app is working with the library BLESSED-ANDROID
 
 - **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
 
-last updated: March 19th 2024 13:00
+last updated: June 19th 2024 13:00
 
