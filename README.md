@@ -33,6 +33,7 @@ The sample app is working with the library BLESSED-ANDROID
 - **Mifare DESFire EVx NFC tag: Change the Master Application Key from DES to AES (Android/Java)**: https://medium.com/@androidcrypto/mifare-desfire-evx-nfc-tag-change-the-master-application-key-from-des-to-aes-android-java-e5dcf02861ff
 - **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 1**: https://medium.com/@androidcrypto/demystify-the-secure-dynamic-message-with-ntag-424-dna-nfc-tags-android-java-part-1-b947c482913c
 - **Demystify the Secure Dynamic Message with NTAG 424 DNA NFC tags (Android/Java) Part 2**: https://medium.com/@androidcrypto/demystify-the-secure-dynamic-message-with-ntag-424-dna-nfc-tags-android-java-part-2-1f8878faa928
+
 ## Firebase related articles 
 - **Setup of a Firebase project tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7
 - **Setup of Firebase Authentication tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-firebase-authentication-tutorial-step-by-step-20713c15dd30
@@ -43,6 +44,30 @@ The sample app is working with the library BLESSED-ANDROID
 - **Finish the setup of a Firebase project for a Web app tutorial (step by step)**: will follow soon
 - **Firebase tutorial for an Android app (Java)**: will follow soon
 - **Firebase tutorial for a Web app (Javascript)**: will follow soon
+
+## Arduino R4 Wi-Fi articles
+
+### MQ-Sensor series
+- **MQ Sensors Series usage with Arduino R4 Wi-Fi (Overview)**: https://medium.com/@androidcrypto/mq-sensors-series-usage-with-arduino-r4-wi-fi-overview-b0ea824edf64
+- **MQ Sensors Series Read the Gas Concentration with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-sensors-series-read-the-gas-concentration-with-arduino-r4-wi-fi-26ff84957e21
+- **MQ Sensors Series Burn-In with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-sensors-series-burn-in-with-arduino-r4-wi-fi-afb642776ba9
+- **MQ-2 Sensor (Flammable and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-2-sensor-liquid-petroleum-gases-lpg-and-other-gases-usage-with-arduino-r4-wi-fi-87b6381b4eb3
+- **MQ-3 Sensor (Alcohol and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-3-sensor-alcohol-and-other-gases-usage-with-arduino-r4-wi-fi-8887e9631b07
+- **MQ-4 Sensor (Smoke, Liquid Petroleum Gases “LPG” and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-4-sensor-smoke-liquid-petroleum-gases-lpg-and-other-gases-usage-with-arduino-r4-wi-fi-f8681bffa766
+- **MQ-5 Sensor (Natural and Liquid Petroleum Gases and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-5-sensor-natural-and-liquid-petroleum-gases-and-other-gases-usage-with-arduino-r4-wi-fi-004b356f3b04
+- **MQ-6 Sensor (Flammable Gases and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-6-sensor-flammable-gases-and-other-gases-usage-with-arduino-r4-wi-fi-97442b4e8d58
+- **c**:
+- **MQ-8 Sensor (Hydrogen Gases and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-8-sensor-hydrogen-gases-and-other-gases-usage-with-arduino-r4-wi-fi-3a11be8456ad
+- **c**:
+- **MQ-135 Sensor (Carbon Dioxide and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-135-sensor-carbon-dioxide-and-other-gases-usage-with-arduino-r4-wi-fi-25df8dbd6f76
+- **c**:
+- **c**:
+- **c**:
+- 
+
+
+## ESP32 articles
+
 
 ## Several articles
 
