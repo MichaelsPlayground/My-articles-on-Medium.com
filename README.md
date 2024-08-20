@@ -56,17 +56,24 @@ The sample app is working with the library BLESSED-ANDROID
 - **MQ-4 Sensor (Smoke, Liquid Petroleum Gases “LPG” and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-4-sensor-smoke-liquid-petroleum-gases-lpg-and-other-gases-usage-with-arduino-r4-wi-fi-f8681bffa766
 - **MQ-5 Sensor (Natural and Liquid Petroleum Gases and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-5-sensor-natural-and-liquid-petroleum-gases-and-other-gases-usage-with-arduino-r4-wi-fi-004b356f3b04
 - **MQ-6 Sensor (Flammable Gases and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-6-sensor-flammable-gases-and-other-gases-usage-with-arduino-r4-wi-fi-97442b4e8d58
-- **c**:
+- **MQ-78 Sensor**:
 - **MQ-8 Sensor (Hydrogen Gases and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-8-sensor-hydrogen-gases-and-other-gases-usage-with-arduino-r4-wi-fi-3a11be8456ad
-- **c**:
+- **MQ-9 Sensor**:
 - **MQ-135 Sensor (Carbon Dioxide and other gases) usage with Arduino R4 Wi-Fi**: https://medium.com/@androidcrypto/mq-135-sensor-carbon-dioxide-and-other-gases-usage-with-arduino-r4-wi-fi-25df8dbd6f76
+
+
+## ESP32 articles
+
+- **Environmental Sensor usage with ESP32 (Overview)**: https://medium.com/@androidcrypto/environmental-sensor-usage-with-esp32-overview-d436343261c3
+- **c**:
+- **c**:
+- **c**:
+- **c**:
 - **c**:
 - **c**:
 - **c**:
 - 
 
-
-## ESP32 articles
 
 
 ## Several articles
