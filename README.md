@@ -76,12 +76,15 @@ The sample app is working with the library BLESSED-ANDROID
 - **ESP32 Environmental Sensor BMP280 (Temperature & Pressure)**:
 - **ESP32 Environmental Sensor AHT10 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-aht10-temperature-humidity-23b27a4b3cf8
 - **ESP32 Environmental Sensors AHT20 (Temperature & Humidity) + BMP280 (Temperature & Pressure)**:
+- **ESP32 Environmental Sensor AGS02MA (Total volatile organic compounds "TVOC")**:
 - **ESP32 Add a long term data storage and visualization to your sketch (using ThingSpeak)**: https://medium.com/@androidcrypto/esp32-add-a-long-term-data-storage-and-visualization-to-your-sketch-using-thingspeak-49bf54f78360
 - **ESP32 I2C-Bus Scanner**: https://medium.com/@androidcrypto/esp32-i2c-bus-scanner-1ac88f6ffd86
 - **c**:
 - **c**:
 - **c**:
-- 
+- **c**:
+- **c**:
+- **c**: 
 
 
 
