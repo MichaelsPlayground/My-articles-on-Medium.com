@@ -68,10 +68,16 @@ The sample app is working with the library BLESSED-ANDROID
 ## ESP32 articles
 
 - **Environmental Sensor usage with ESP32 (Overview)**: https://medium.com/@androidcrypto/environmental-sensor-usage-with-esp32-overview-d436343261c3
-- **c**:
-- **c**:
-- **c**:
-- **c**:
+- **ESP32 Environmental Sensor Base Application**: https://medium.com/@androidcrypto/esp32-environmental-sensor-base-application-61b08265461f
+- **ESP32 Environmental Sensor DHT11 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht11-temperature-humidity-3d48060e98e0
+- **ESP32 Environmental Sensor DHT22 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht22-temperature-humidity-d5a7d2d9cd57
+- **ESP32 Environmental Sensor BME280 (Temperature, Humidity & Pressure)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-bme280-temperature-humidity-pressure-914122659582
+- **ESP32 Environmental Sensor BME280 measures the Altitude**: https://medium.com/@androidcrypto/esp32-environmental-sensor-bme280-measures-the-altitude-5a847073376a
+- **ESP32 Environmental Sensor BMP280 (Temperature & Pressure)**:
+- **ESP32 Environmental Sensor AHT10 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-aht10-temperature-humidity-23b27a4b3cf8
+- **ESP32 Environmental Sensors AHT20 (Temperature & Humidity) + BMP280 (Temperature & Pressure)**:
+- **ESP32 Add a long term data storage and visualization to your sketch (using ThingSpeak)**: https://medium.com/@androidcrypto/esp32-add-a-long-term-data-storage-and-visualization-to-your-sketch-using-thingspeak-49bf54f78360
+- **ESP32 I2C-Bus Scanner**: https://medium.com/@androidcrypto/esp32-i2c-bus-scanner-1ac88f6ffd86
 - **c**:
 - **c**:
 - **c**:
