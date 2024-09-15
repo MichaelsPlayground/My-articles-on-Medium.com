@@ -36,6 +36,7 @@ The sample app is working with the library BLESSED-ANDROID
 - **Explore a MIFARE Ultralight C NFC tag (Android/Java)**: https://medium.com/@androidcrypto/explore-a-mifare-ultralight-c-nfc-tag-android-java-e6408b1030cf
 - **Explore a MIFARE Ultralight EV1 NFC tag (Android/Java)**: https://medium.com/@androidcrypto/explore-a-mifare-ultralight-ev1-nfc-tag-android-java-a23d0b4b0ea5
 - **How to use Host-based Card Emulation (HCE) in Android — a beginner tutorial (Java)**: https://medium.com/@androidcrypto/how-to-use-host-based-card-emulation-hce-in-android-a-beginner-tutorial-java-32974dd89529
+- **How to use NFC Reader Mode in Android to connect to NFC tags (Java)**: https://medium.com/@androidcrypto/how-to-use-nfc-reader-mode-in-android-to-connect-to-nfc-tags-java-d70641a5def4
 
 ## Firebase related articles 
 - **Setup of a Firebase project tutorial (step by step)**: https://medium.com/@androidcrypto/setup-of-a-firebase-project-tutorial-step-by-step-a91f0718e7b7
@@ -69,14 +70,16 @@ The sample app is working with the library BLESSED-ANDROID
 
 - **Environmental Sensor usage with ESP32 (Overview)**: https://medium.com/@androidcrypto/environmental-sensor-usage-with-esp32-overview-d436343261c3
 - **ESP32 Environmental Sensor Base Application**: https://medium.com/@androidcrypto/esp32-environmental-sensor-base-application-61b08265461f
-- **ESP32 Environmental Sensor DHT11 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht11-temperature-humidity-3d48060e98e0
-- **ESP32 Environmental Sensor DHT22 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht22-temperature-humidity-d5a7d2d9cd57
+- **ESP32 Environmental Sensor AHT10 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-aht10-temperature-humidity-23b27a4b3cf8 
+- **ESP32 Environmental Sensor AHT20 (Temperature & Humidity) + BMP280 (Temperature & Pressure)**:
 - **ESP32 Environmental Sensor BME280 (Temperature, Humidity & Pressure)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-bme280-temperature-humidity-pressure-914122659582
 - **ESP32 Environmental Sensor BME280 measures the Altitude**: https://medium.com/@androidcrypto/esp32-environmental-sensor-bme280-measures-the-altitude-5a847073376a
-- **ESP32 Environmental Sensor BMP280 (Temperature & Pressure)**:
-- **ESP32 Environmental Sensor AHT10 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-aht10-temperature-humidity-23b27a4b3cf8
-- **ESP32 Environmental Sensors AHT20 (Temperature & Humidity) + BMP280 (Temperature & Pressure)**:
+- **ESP32 Environmental Sensor BMP280 (Temperature & Pressure)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-bmp280-temperature-pressure-9816187aa754
+- **ESP32 Environmental Sensor DHT11 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht11-temperature-humidity-3d48060e98e0
+- **ESP32 Environmental Sensor DHT22 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht22-temperature-humidity-d5a7d2d9cd57
+- === Sensors that measures Air Quality data ===
 - **ESP32 Environmental Sensor AGS02MA (Total volatile organic compounds "TVOC")**:
+ 
 - **ESP32 Add a long term data storage and visualization to your sketch (using ThingSpeak)**: https://medium.com/@androidcrypto/esp32-add-a-long-term-data-storage-and-visualization-to-your-sketch-using-thingspeak-49bf54f78360
 - **ESP32 I2C-Bus Scanner**: https://medium.com/@androidcrypto/esp32-i2c-bus-scanner-1ac88f6ffd86
 - **c**:
@@ -92,5 +95,5 @@ The sample app is working with the library BLESSED-ANDROID
 
 - **Secure your device with ASCON, the new encryption standard for small devices (Java)**: https://medium.com/@androidcrypto/secure-your-device-with-ascon-the-new-encryption-standard-for-small-devices-java-ccb5447489c6
 
-last updated: June 19th 2024 13:00
+last updated: Sept. 15th 2024 11:00
 
