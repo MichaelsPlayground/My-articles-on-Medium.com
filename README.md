@@ -79,7 +79,7 @@ The sample app is working with the library BLESSED-ANDROID
 - **ESP32 Environmental Sensor DHT22 (Temperature & Humidity)**: https://medium.com/@androidcrypto/esp32-environmental-sensor-dht22-temperature-humidity-d5a7d2d9cd57
 - === Sensors that measures Air Quality data ===
 - **ESP32 Environmental Sensor AGS02MA (Total volatile organic compounds "TVOC")**:
- 
+- === Additional articles ===
 - **ESP32 Add a long term data storage and visualization to your sketch (using ThingSpeak)**: https://medium.com/@androidcrypto/esp32-add-a-long-term-data-storage-and-visualization-to-your-sketch-using-thingspeak-49bf54f78360
 - **ESP32 I2C-Bus Scanner**: https://medium.com/@androidcrypto/esp32-i2c-bus-scanner-1ac88f6ffd86
 - **c**:
